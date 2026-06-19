@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The East Sea of Korea - Reclaim the rightful name of Korea's territorial waters">
+    <meta name="keywords" content="East Sea, Sea of Japan, Korea, territorial waters, East Sea campaign">
+    <title>The East Sea of Korea</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>🌊 East Sea of Korea</h1>
+            </div>
+            <div class="lang-switcher">
+                <select id="langSelect" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="ko">한국어</option>
+                    <option value="ja">日本語</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-map">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Simplified Korea and Japan map -->
+                    <defs>
+                        <linearGradient id="seaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#1e90ff;stop-opacity:0.9" />
+                            <stop offset="100%" style="stop-color:#0047ab;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Sea of Korea (East Sea) -->
+                    <rect x="100" y="50" width="200" height="200" fill="url(#seaGradient)" rx="10"/>
+                    
+                    <!-- Korea outline (simplified) -->
+                    <path d="M 80 100 L 95 80 L 100 120 L 90 160 L 85 180 Z" fill="#90EE90" stroke="#2d5016" stroke-width="2"/>
+                    
+                    <!-- Japan outline (simplified) -->
+                    <path d="M 305 90 L 320 70 L 325 140 L 315 180 L 305 160 Z" fill="#FFB6C1" stroke="#8B0000" stroke-width="2"/>
+                    
+                    <!-- Text labels -->
+                    <text x="150" y="160" font-size="24" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">
+                        EAST SEA
+                    </text>
+                    <text x="60" y="140" font-size="14" fill="#2d5016" font-weight="bold" font-family="Arial">
+                        KOREA
+                    </text>
+                    <text x="340" y="140" font-size="12" fill="#8B0000" font-family="Arial">
+                        Japan
+                    </text>
+                </svg>
+            </div>
+            
+            <h1 class="hero-title">The East Sea of Korea</h1>
+            <p class="hero-subtitle">Our Heritage, Our Name</p>
+            <p class="hero-description">For over 2,000 years, Korea's territorial waters have been known as the East Sea. This is our history. This is our right.</p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('sign').scrollIntoView({behavior: 'smooth'})">Sign Now</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('facts').scrollIntoView({behavior: 'smooth'})">Learn More</button>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Facts Section -->
+    <section class="facts" id="facts">
+        <div class="container">
+            <h2 class="section-title">The Facts</h2>
+            
+            <div class="facts-grid">
+                <!-- Fact 1 -->
+                <div class="fact-card">
+                    <div class="fact-number">1</div>
+                    <h3>Historical Right</h3>
+                    <p>For over 2,000 years, this sea has been called the "East Sea" in Korean records, maps, and official documents. This name reflects Korea's historical claim to these waters.</p>
+                </div>
+                
+                <!-- Fact 2 -->
+                <div class="fact-card">
+                    <div class="fact-number">2</div>
+                    <h3>International Law</h3>
+                    <p>According to international maritime law, the naming rights of territorial waters belong to the coastal nation. Korea, as the eastern coastal nation, has the rightful authority to name these waters.</p>
+                </div>
+                
+                <!-- Fact 3 -->
+                <div class="fact-card">
+                    <div class="fact-number">3</div>
+                    <h3>Japan's Lobbying</h3>
+                    <p>During the Japanese occupation (1910-1945) and through subsequent diplomatic pressure, Japan unilaterally changed the name to "Sea of Japan." This was done without Korea's consent or agreement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline" id="timeline">
+        <div class="container">
+            <h2 class="section-title">Historical Timeline</h2>
+            
+            <div class="timeline-content">
+                <div class="timeline-item">
+                    <div class="timeline-marker">📜</div>
+                    <div class="timeline-text">
+                        <h4>1000+ Years Ago</h4>
+                        <p>Ancient Korean texts and maps consistently refer to the sea east of Korea as the "East Sea" (동해)</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">🏯</div>
+                    <div class="timeline-text">
+                        <h4>Joseon Dynasty Era</h4>
+                        <p>Official Korean maps and government records establish "East Sea" as the official name of Korea's eastern waters</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">⚔️</div>
+                    <div class="timeline-text">
+                        <h4>1905-1945: Japanese Occupation</h4>
+                        <p>Japan forcibly changes the name to "Sea of Japan" (日本海) and imposes this name through colonial authority</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">🌍</div>
+                    <div class="timeline-text">
+                        <h4>1945-Present: International Dispute</h4>
+                        <p>Through diplomatic lobbying and international influence, Japan spreads "Sea of Japan" globally while Korea advocates for "East Sea"</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">✊</div>
+                    <div class="timeline-text">
+                        <h4>Today: The Campaign Continues</h4>
+                        <p>Korea continues to reclaim its historical right to name its own territorial waters. Your support matters.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Status Section -->
+    <section class="status" id="status">
+        <div class="container">
+            <h2 class="section-title">Global Recognition Status</h2>
+            
+            <div class="status-grid">
+                <div class="status-item">
+                    <h4>🇰🇷 Korea</h4>
+                    <p class="status-value">East Sea</p>
+                </div>
+                <div class="status-item">
+                    <h4>🇯🇵 Japan</h4>
+                    <p class="status-value">Sea of Japan</p>
+                </div>
+                <div class="status-item">
+                    <h4>🌐 United Nations</h4>
+                    <p class="status-value">Disputed Territory</p>
+                </div>
+                <div class="status-item">
+                    <h4>🚢 International Hydrographic Organization</h4>
+                    <p class="status-value">Both Names</p>
+                </div>
+            </div>
+            
+            <p class="status-note">The lack of international consensus shows the power of Japan's diplomatic lobbying. Together, we can change this.</p>
+        </div>
+    </section>
+
+    <!-- How to Help Section -->
+    <section class="help" id="sign">
+        <div class="container">
+            <h2 class="section-title">How You Can Help</h2>
+            
+            <div class="help-grid">
+                <div class="help-card">
+                    <div class="help-icon">✍️</div>
+                    <h3>Sign the Petition</h3>
+                    <p>Add your name to thousands supporting Korea's rightful claim to the East Sea.</p>
+                    <a href="https://forms.gle/eastseapetition" target="_blank" class="help-button">Sign Now</a>
+                </div>
+                
+                <div class="help-card">
+                    <div class="help-icon">📢</div>
+                    <h3>Share the Message</h3>
+                    <p>Spread awareness on social media. Use #EastSeaOfKorea #동해 #EastSeaCampaign</p>
+                    <button class="help-button" onclick="shareOnSocial()">Share Now</button>
+                </div>
+                
+                <div class="help-card">
+                    <div class="help-icon">💪</div>
+                    <h3>Support the Movement</h3>
+                    <p>Contribute to our campaign and help us reach more people around the world.</p>
+                    <a href="mailto:contact@eastseaofkorea.com" class="help-button">Get Involved</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Q: Why is this important?</h4>
+                    <p>A: The name of a territory reflects sovereignty and historical rights. Reclaiming "East Sea" is about asserting Korea's rightful authority over its own waters and correcting a historical injustice.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Q: How long has this dispute existed?</h4>
+                    <p>A: The deliberate name change to "Sea of Japan" occurred during Japanese occupation. Since Korea's independence in 1945, this has remained a point of international dispute.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Q: What do international organizations say?</h4>
+                    <p>A: Most international bodies recognize both names due to conflicting claims, but this should not be the case. Korea's historical and legal right to name its own waters is clear.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Q: How can I help?</h4>
+                    <p>A: Sign our petition, share on social media, support the movement, and educate others about Korea's rightful claim to the East Sea.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>The East Sea of Korea</h3>
+                <p>Reclaiming our heritage, asserting our right.</p>
+                
+                <div class="social-links">
+                    <a href="https://twitter.com" target="_blank" title="Twitter">𝕏</a>
+                    <a href="https://facebook.com" target="_blank" title="Facebook">f</a>
+                    <a href="https://instagram.com" target="_blank" title="Instagram">📷</a>
+                    <a href="https://youtube.com" target="_blank" title="YouTube">▶</a>
+                </div>
+                
+                <p class="footer-email">
+                    Email: <a href="mailto:contact@eastseaofkorea.com">contact@eastseaofkorea.com</a>
+                </p>
+                
+                <p class="footer-credit">
+                    © 2024 East Sea of Korea Campaign. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
